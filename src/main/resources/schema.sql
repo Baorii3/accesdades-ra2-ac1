@@ -1,6 +1,6 @@
 DROP TABLE IF EXISTS students;
 
-create table students (
+CREATE TABLE students (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
     nom VARCHAR(100) NOT NULL,
     cognom VARCHAR(100) DEFAULT NULL,

@@ -3,7 +3,7 @@ package accesdades.ra2.ac1b.accesdades_ra2_ac1b.model;
 public class Student{
     
     private Long id;
-    private String name;
+    private String nom;
     private String cognom;
     private int age;
     private String cicle;
@@ -12,9 +12,9 @@ public class Student{
     public Student() {
     }
 
-    public Student(Long id, String name, String cognom, int age, String cicle, int any) {
+    public Student(Long id, String nom, String cognom, int age, String cicle, int any) {
         this.id = id;
-        this.name = name;
+        this.nom = nom;
         this.cognom = cognom;
         this.age = age;
         this.cicle = cicle;
@@ -29,12 +29,12 @@ public class Student{
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getNom() {
+        return nom;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNom(String nom) {
+        this.nom = nom;
     }
 
     public String getCognom() {

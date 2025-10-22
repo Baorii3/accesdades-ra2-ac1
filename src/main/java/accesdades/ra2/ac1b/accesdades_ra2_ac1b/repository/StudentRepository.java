@@ -46,7 +46,7 @@ public class StudentRepository {
             registre += jdbcTemplate.update(sql,
                     "Alumne" + i,
                     "Cognom" + i,
-                    18 + (Math.random() * 5),
+                    18 + (int)(Math.random() * 5),
                     "DAM",
                     2025);
         }

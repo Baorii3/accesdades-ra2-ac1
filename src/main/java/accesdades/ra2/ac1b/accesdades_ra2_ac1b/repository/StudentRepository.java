@@ -40,7 +40,16 @@ public class StudentRepository {
     }
 
     public int save(){
-        String sql = "insert into Students (nom, age, cicle) values (?, ?, ?)";
-        return jdbcTemplate.update(sql, "Ian", 19, "tercero");
+        int registre = 0;
+        for (int i = 1; i <= 10; i++) {
+            String sql = "INSERT INTO students (nom, cognom, age, cicle, anyo) VALUES (?, ?, ?, ?, ?)";
+            registre += jdbcTemplate.update(sql,
+                    "Alumne" + i,
+                    "Cognom" + i,
+                    18 + (Math.random() * 5),
+                    "DAM",
+                    2025);
+        }
+        return registre;
     }
 }
